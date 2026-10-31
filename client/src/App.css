@@ -1,0 +1,157 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: #243b67;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #dbeafe;
+}
+
+main {
+  width: 90%;
+  max-width: 650px;
+  margin: 40px auto;
+}
+
+.form-card,
+.dashboard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+  color: #243b67;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+button {
+  background: #3156a3;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e3a70;
+}
+
+.switch {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.switch span {
+  color: #3156a3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.balance {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.balance-card {
+  flex: 1;
+  background: #eaf0ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.balance-card h4 {
+  margin-bottom: 10px;
+}
+
+.balance-card h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.logout {
+  margin-top: 20px;
+  background: #dc3545;
+  width: 100%;
+}
+
+.logout:hover {
+  background: #b52a37;
+}
+
+.message {
+  text-align: center;
+  padding: 12px;
+  color: #166534;
+  background: #dcfce7;
+  border-radius: 7px;
+}
+
+@media (max-width: 500px) {
+  .balance {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+}
+input,
+select {
+  background-color: white;
+  color: #1e293b;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
