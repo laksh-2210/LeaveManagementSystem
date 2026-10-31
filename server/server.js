@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.use("/api", userRoutes);
 
 // Database connection and server start
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 connectDB().then(() => {
     app.listen(PORT, () => {

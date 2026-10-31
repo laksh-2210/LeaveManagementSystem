@@ -1,8 +1,6 @@
-
 import { useState } from "react";
 import "./App.css";
-
-const API = "http://localhost:5001/api";
+const API = import.meta.env.VITE_API_URL || "http://localhost:5001/api";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -309,11 +307,8 @@ function App() {
                         <tr key={application.leaveId}>
 
                           <td>{application.username}</td>
-
                           <td>{application.rollNumber}</td>
-
                           <td>{application.leaveType}</td>
-
                           <td>{application.days}</td>
 
                           <td>
@@ -323,7 +318,6 @@ function App() {
                           </td>
 
                           <td>{application.leaveReason}</td>
-
                           <td>{application.status}</td>
 
                           <td>
@@ -522,7 +516,6 @@ function App() {
               <div className="form-card">
 
                 <h3>Staff Access</h3>
-
                 <p>Open the staff leave management portal.</p>
 
                 <button
